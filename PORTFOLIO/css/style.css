@@ -1,0 +1,452 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Glory", sans-serif;
+}
+
+* h2,
+* p {
+  color: cornsilk;
+}
+
+.sticky-arrow {
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  position: fixed;
+  bottom: 0;
+  right: 50vw;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  content: "#f077";
+  cursor: pointer;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 3em 0;
+  border-radius: 50%;
+  padding: 0.25em;
+  width: 50px;
+  height: 50px;
+  background-color: #f0f0f0;
+}
+
+section {
+  padding-top: 10vh;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  height: 10vh;
+  width: 100vw;
+  z-index: 9999;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header nav ul :nth-child(1) {
+  -webkit-animation-name: moving;
+          animation-name: moving;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-transition: ease-in 1s;
+  transition: ease-in 1s;
+}
+
+header nav ul :nth-child(2) {
+  -webkit-animation-name: moving;
+          animation-name: moving;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-transition: ease-in 1s;
+  transition: ease-in 1s;
+}
+
+header nav ul :nth-child(3) {
+  -webkit-animation-name: moving;
+          animation-name: moving;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-transition: ease-in 1s;
+  transition: ease-in 1s;
+}
+
+header nav ul :nth-child(4) {
+  -webkit-animation-name: moving;
+          animation-name: moving;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-transition: ease-in 1s;
+  transition: ease-in 1s;
+}
+
+header nav ul :nth-child(5) {
+  -webkit-animation-name: moving;
+          animation-name: moving;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-transition: ease-in 1s;
+  transition: ease-in 1s;
+}
+
+header nav ul li {
+  font-size: 1rem;
+  position: relative;
+  list-style: none;
+  padding: 1rem;
+}
+
+header nav ul li a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #eeeeee;
+  position: relative;
+}
+
+header nav ul li a::before, header nav ul li a::after {
+  position: absolute;
+  background: #dddbdb;
+  content: "";
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  right: 0px;
+  width: 100%;
+  height: 1px;
+}
+
+header nav ul li a::before {
+  top: 0px;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+header nav ul li a::after {
+  bottom: 0px;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+header nav ul li a:hover::before, header nav ul li a:hover::after {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.home {
+  background-image: url(/imgs/isabel-galvez-i54owgDjXeY-unsplash.jpg);
+  background-size: cover;
+  height: 100vh;
+  margin-top: 10vh;
+}
+
+@-webkit-keyframes myfirst {
+  0% {
+    left: -100vw;
+    top: 0px;
+  }
+  100% {
+    left: 0vw;
+    top: 0px;
+  }
+}
+
+@keyframes myfirst {
+  0% {
+    left: -100vw;
+    top: 0px;
+  }
+  100% {
+    left: 0vw;
+    top: 0px;
+  }
+}
+
+.home .home-part-one {
+  position: relative;
+  -webkit-animation: myfirst 3s linear 1;
+          animation: myfirst 3s linear 1;
+}
+
+.home .home-part-one p {
+  text-align: left;
+  font-size: 1.5rem;
+  padding-left: 5vw;
+  padding-top: 7vw;
+}
+
+.home .home-part-two {
+  position: relative;
+  -webkit-animation: myfirst 3s linear 1;
+          animation: myfirst 3s linear 1;
+}
+
+.home .home-part-two p {
+  text-align: left;
+  font-size: 1.5rem;
+  padding-left: 60vw;
+  padding-top: 25vh;
+}
+
+.home .home-part-two img {
+  width: 40px;
+  height: 40px;
+}
+
+.work {
+  height: 150vh;
+  background-color: #042141;
+}
+
+.work h2 {
+  text-align: center;
+  text-transform: uppercase;
+  height: 82px;
+}
+
+.work .title-effect {
+  position: relative;
+}
+
+.work p {
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 3vh;
+  padding-bottom: 5vh;
+}
+
+.work p::before, .work p::after {
+  position: absolute;
+  opacity: 0;
+  width: 0%;
+  height: 2px;
+  content: "";
+  background: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.work p::before {
+  left: 0px;
+  top: 0px;
+}
+
+.work p::after {
+  right: 0px;
+  bottom: 0px;
+}
+
+.work p:hover::before, .work p:hover::after {
+  opacity: 1;
+  width: 100%;
+}
+
+.work .work-part-1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (25vh)[3];
+      grid-template-columns: repeat(3, 25vh);
+  gap: 5vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.work .work-part-1 .sample {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2vh;
+  background-color: #3d75b4;
+  border-radius: 5px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.work .work-part-1 .sample .btn {
+  text-decoration: none;
+  background-color: #494964;
+  color: white;
+  border-radius: 5px;
+  display: block;
+  height: 5vh;
+  width: 7vw;
+  text-align: center;
+  padding-top: 1.5vh;
+}
+
+.work .work-part-1 .sample .btn a {
+  color: whitesmoke;
+}
+
+.work .work-part-1 .sample .btn:hover {
+  background-color: #d1d6d1;
+  color: black;
+}
+
+.work .work-part-1 .sample:hover {
+  color: white;
+  background-color: black;
+  -webkit-box-shadow: 10px 10px 10px black;
+          box-shadow: 10px 10px 10px black;
+}
+
+.work .work-part-1 .sample .desription {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.work .work-part-1 p {
+  padding: 2vh;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.work .work-part-2 p {
+  padding: 6vh;
+  text-align: center;
+}
+
+.work .work-part-2 div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (15vw)[3];
+      grid-template-columns: repeat(3, 15vw);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 1em;
+          column-gap: 1em;
+}
+
+.work .work-part-2 div img {
+  width: 15vw;
+}
+
+.goals {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+
+.goals h2,
+.goals p {
+  text-align: center;
+}
+
+.goals .goals_container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (40vh)[3];
+      grid-template-columns: repeat(3, 40vh);
+  -ms-grid-rows: (auto)[2];
+      grid-template-rows: repeat(2, auto);
+  gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.goals .goals_container .card-container {
+  position: relative;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.goals .goals_container .card-container .card-face {
+  background-color: white;
+  margin: 2rem;
+  border: 0.1rem solid white;
+  border-radius: 20px 70px 200px;
+  -webkit-box-shadow: 2px 2px 2px white;
+          box-shadow: 2px 2px 2px white;
+  padding: 1rem;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.goals .goals_container .card-container .card-face img {
+  width: 80%;
+}
+
+.goals .goals_container .card-container .card-face:hover {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.goals .goals_container .card-container .card-back {
+  margin: 2rem;
+  border: 0.1rem solid white;
+  border-radius: 20px 70px 200px;
+  -webkit-box-shadow: 2px 2px 2px #fffdfd;
+          box-shadow: 2px 2px 2px #fffdfd;
+  padding: 1rem;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.goals .goals_container .card-container .card-back:hover {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+}
+
+.goals .goals_container .card-container .card-back p {
+  color: #d0dd61;
+  font-size: 1.5rem;
+  text-align: left;
+  padding-top: 15vh;
+}
+
+.about {
+  height: 100vh;
+  background-color: #161616;
+}
+
+footer {
+  background-color: #2e2e2e;
+  height: 40vh;
+}
+
+footer h2,
+footer p {
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

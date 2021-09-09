@@ -1,0 +1,426 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Glory", sans-serif;
+  h2,
+  p {
+    color: cornsilk;
+  }
+}
+// @keyframes moving {
+//   from {
+//     top: -10vh;
+//   }
+//   to {
+//     top: 1vh;
+//   }
+//}
+.sticky-arrow {
+  transition: all 0.25s ease-in-out;
+  position: fixed;
+  bottom: 0;
+  right: 50vw;
+  display: inline-flex;
+  content: "#f077";
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 3em 0;
+  border-radius: 50%;
+  padding: 0.25em;
+  width: 50px;
+  height: 50px;
+  background-color: #f0f0f0;
+}
+section {
+  padding-top: 10vh;
+}
+header {
+  background-color: rgba($color: #000000, $alpha: 0.4);
+  position: fixed;
+  top: 0;
+  height: 10vh;
+  width: 100vw;
+  z-index: 9999;
+  nav {
+    ul {
+      //   position: fixed;
+      //   background-color: #f0f0f0;
+      //   opacity: 0.2;
+      // width: 100vw;
+      // height: 7vh;
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      justify-content: center;
+
+      :nth-child(1) {
+        animation-name: moving;
+        animation-duration: 1s;
+        transition: ease-in 1s;
+      }
+      :nth-child(2) {
+        animation-name: moving;
+        animation-duration: 2s;
+        transition: ease-in 1s;
+      }
+      :nth-child(3) {
+        animation-name: moving;
+        animation-duration: 3s;
+        transition: ease-in 1s;
+      }
+      :nth-child(4) {
+        animation-name: moving;
+        animation-duration: 4s;
+        transition: ease-in 1s;
+      }
+      :nth-child(5) {
+        animation-name: moving;
+        animation-duration: 4s;
+        transition: ease-in 1s;
+      }
+
+      li {
+        font-size: 1rem;
+        position: relative;
+        list-style: none;
+        padding: 1rem;
+        //   animation-name: moving;
+        //   animation-duration: 4s;
+        //   animation-iteration-count: 2;
+        //   transition: 1s;
+
+        a {
+          font-size: 1.5rem;
+          text-decoration: none;
+          // border-radius: 50% 20% / 10% 40%;
+          // box-shadow: 7px 7px 7px #2e2e2e;
+          color: #eeeeee;
+          position: relative;
+          &:hover {
+            //color: #2e2e2e;
+          }
+          &::before,
+          &::after {
+            position: absolute;
+
+            background: rgb(221, 219, 219);
+            content: "";
+            opacity: 0;
+            transition: 0.5s;
+            right: 0px;
+            width: 100%;
+            height: 1px;
+          }
+          &::before {
+            top: 0px;
+            transform: translateY(-10px);
+          }
+          &::after {
+            bottom: 0px;
+            transform: translateY(10px);
+          }
+          &:hover::before,
+          &:hover::after {
+            opacity: 1;
+            transform: translateY(0px);
+          }
+        }
+      }
+    }
+  }
+}
+
+.home {
+  background-image: url(/imgs/isabel-galvez-i54owgDjXeY-unsplash.jpg);
+  background-size: cover;
+  height: 100vh;
+  margin-top: 10vh;
+  //   width: 100%;
+  //   height: 100vh;
+  //   background-image: url(/imgs/isabel-galvez-i54owgDjXeY-unsplash.jpg);
+  //   background-size: cover;
+  @keyframes myfirst {
+    0% {
+      left: -100vw;
+      top: 0px;
+    }
+    100% {
+      left: 0vw;
+      top: 0px;
+    }
+    // 50%  {right:200px; top:200px;}
+    // 75%  {right:0px; top:200px;}
+    // 100% { right:0px; top:0px;}
+  }
+
+  .home-part-one {
+    position: relative;
+    animation: myfirst 3s linear 1;
+    p {
+      text-align: left;
+      font-size: 1.5rem;
+      padding-left: 5vw;
+      padding-top: 7vw;
+    }
+  }
+
+  .home-part-two {
+    position: relative;
+    animation: myfirst 3s linear 1;
+    p {
+      text-align: left;
+      font-size: 1.5rem;
+      padding-left: 60vw;
+      padding-top: 25vh;
+    }
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+.work {
+  //   width: 100%;
+  height: 150vh;
+  background-color: #042141;
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    height: 82px;
+  }
+  .title-effect {
+    position: relative;
+  }
+  p {
+    &::before,
+    &::after {
+      position: absolute;
+      opacity: 0;
+      width: 0%;
+      height: 2px;
+      content: "";
+      background: #fff;
+      transition: all 0.3s;
+    }
+    &::before {
+      left: 0px;
+      top: 0px;
+    }
+    &::after {
+      right: 0px;
+      bottom: 0px;
+    }
+    &:hover::before,
+    &:hover::after {
+      opacity: 1;
+      width: 100%;
+    }
+
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 3vh;
+    padding-bottom: 5vh;
+
+    //padding-bottom: 5%;
+    //border: 1px solid;
+    // border-radius: 20% 20%;
+  }
+
+  .work-part-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 25vh);
+    gap: 5vw;
+    justify-content: center;
+
+    .sample {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      //align-items: center;
+      padding: 2vh;
+      background-color: #3d75b4;
+      border-radius: 5px;
+      transition: 300ms;
+      // .butn {
+      //   //text-decoration: none;
+      //   background-color: rgb(100, 73, 75);
+      //   color: white;
+      //   border-radius: 5px;
+      //   display: block;
+      //   height: 5vh;
+      //   width: 7vw;
+      //  // margin-top: 10%;
+      //   text-align: center;
+      //   padding-top: 1.5vh;
+      //  // margin-top: 10px;
+      //   a {
+      //     margin-top: 5vh;
+      //     //text-align: center;
+      //     text-decoration: none;
+      //     color: whitesmoke;
+
+      //   }
+      //   &:hover {
+      //     background-color: rgb(193, 197, 193);
+
+      //     a{
+      //       color: rgb(12, 12, 12);
+      //     }
+
+      // }}
+
+      //width: 33%;
+
+      .btn {
+        text-decoration: none;
+        background-color: rgb(73, 73, 100);
+        color: white;
+        border-radius: 5px;
+        display: block;
+        height: 5vh;
+        width: 7vw;
+
+        text-align: center;
+        padding-top: 1.5vh;
+        a {
+          //text-align: center;
+          //vertical-align:middle;
+          //text-decoration: none;
+          color: whitesmoke;
+        }
+
+        &:hover {
+          background-color: rgb(209, 214, 209);
+          color: black;
+        }
+      }
+      &:hover {
+        color: white;
+        background-color: black;
+        box-shadow: 10px 10px 10px black;
+      }
+
+      .desription {
+        text-align: center;
+        font-size: 1.3rem;
+      }
+    }
+
+    p {
+      padding: 2vh;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+  }
+  .work-part-2 {
+    p {
+      padding: 6vh;
+      text-align: center;
+    }
+    div {
+      display: grid;
+      grid-template-columns: repeat(3, 15vw);
+      justify-content: center;
+      column-gap: 1em;
+      //height: 15vh;
+      img {
+        width: 15vw;
+      }
+    }
+  }
+}
+
+//styling the goals section start//
+
+.goals {
+  width: 100%;
+  height: 100vh;
+   background-color: rgb(0, 0, 0);
+  h2,
+  p {
+    text-align: center;
+  }
+  //   background-image: url(/imgs/rob-potter-z6sy3vnFmnE-unsplash.jpg);
+
+  //   background-size: cover;
+
+  .goals_container {
+    display: grid;
+    grid-template-columns: repeat(3, 40vh);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+   
+   justify-content: center;
+
+
+    .card-container {
+      
+      position: relative;
+      perspective: 1000px;
+
+      .card-face {
+        background-color: rgb(255, 255, 255);
+     
+        margin: 2rem;
+        border: 0.1rem solid rgb(255, 255, 255);
+        border-radius: 20px 70px 200px;
+        box-shadow: 2px 2px 2px rgb(255, 255, 255);
+        padding: 1rem;
+       
+        backface-visibility: hidden;
+        transition: transform 0.5s;
+
+        img {
+          width: 80%;
+        }
+        &:hover {
+          transform: rotateY(180deg);
+        }
+      }
+      .card-back {
+     
+        margin: 2rem;
+        border: 0.1rem solid rgb(255, 255, 255);
+        border-radius: 20px 70px 200px;
+        box-shadow: 2px 2px 2px rgb(255, 253, 253);
+        padding: 1rem;
+       
+        backface-visibility: hidden;
+        transition: transform 0.5s;
+        transform: rotateY(180deg);
+        position: absolute;
+        left: 0;
+        top: 0;
+        &:hover {
+          transform: rotateY(360deg);
+        }
+        p {
+          color: #d0dd61;
+          font-size: 1.5rem;
+          text-align: left;
+          padding-top: 15vh;
+        }
+      }
+    }
+  }
+}
+//styling goals section End***//
+
+.about {
+  //   width: 100%;
+  height: 100vh;
+  background-color: rgb(22, 22, 22);
+  //   background-image: url(/imgs/david-dvoracek-h8ElUo_473c-unsplash.jpg);
+
+  //   background-size: cover;
+}
+footer {
+  h2,
+  p {
+    text-align: center;
+  }
+  background-color: #2e2e2e;
+  height: 40vh;
+}
