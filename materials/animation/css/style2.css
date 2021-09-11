@@ -1,0 +1,90 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.top{
+    border: 2px solid black;
+    padding: 10px;
+    height: 10vh;
+    overflow-y: scroll;
+}
+.footer{
+    border: 2px solid black;
+    padding: 10px;
+    height: 10vh;
+}
+
+.content{
+    background-image: url('../imgs/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 80%;
+    height: 80vh;
+    position: relative;
+}
+
+/* first flower */
+.content img:nth-child(1){
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    z-index: 9999;
+}
+
+/* bee */
+.content img:nth-child(2){
+    position: absolute;
+    bottom: 200px;
+    right: 100px;
+    /* transition: all 1s; */
+    z-index: 9999;
+
+    animation-name: beemove;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+}
+
+/* second flower */
+.content img:nth-child(3){
+    position: absolute;
+    bottom: 5px;
+    right: calc(100% - 206px);
+    transform: rotateY(180deg);
+}
+
+/* third flower */
+.content img:nth-child(4){
+    position: absolute;
+    bottom: -50px;
+    right: calc(50% - 206px);
+    transform: scale(0.3);
+}
+
+/* .content img:nth-child(2):hover{
+    bottom: 150px;
+    right: 50px;
+} */
+
+@keyframes beemove {
+    0%{
+        bottom: 150px;
+        right:50px;
+        z-index: 9999;
+    }
+    33.33%{
+        bottom: 150px;
+        right: calc(100% - 206px);
+        transform: rotateY(180deg);
+    }
+    66.66%{
+        bottom: 0px;
+        right: calc(50% - 206px);
+        transform: scale(0.3);
+        z-index: 999;
+    }
+    100%{
+        bottom: 150px;
+        right:50px;
+    }
+}
