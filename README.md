@@ -1,58 +1,129 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg)](https://classroom.github.com/online_ide?assignment_repo_id=5505470&assignment_repo_type=AssignmentRepo)
-# UIB Portfolio Project
+# Walaa  Alkasim Portfolio
 
----
+##What is it?
+it is a portfolio shows what I have learned through the past three months.
 
-### Objective
+##How to start
+to be able to examin it you need to :
+1. **clone the repository** to your desktop.
+2. you can open the **index.html**file to see the content. 
 
-Create a personal portfolio website that accurately represents your accomplishments, skill sets, and experience. This portfolio will be the first introduction between you and a prospective hiring manager. Hiring managers are looking for skill and professionality, not irrelevant past experience, excessive personal content, goofy memes, or anything that distracts them from your hireability.
+##what did I use to write it?
+* HTML
+* SASS/CSS
 
-Use this opportunity to create a clean, attractive portfolio that you can use to showcase your abilities as a professional web developer. Keep it direct and helpful.
+##What to see on the browser?
 
-### Requirements
+on the browser you can notice that the page is devided into sections with different content.
+these **contents** describe our progress.
 
-- Design, create and deploy your own professional website - demonstrate your proficiency in all of the skills you have learned up to this point
+## The Content:
 
-- Do not use online templates, JavaScript or any other technologies we have not yet covered in the course - you can always implement new technologies and frameworks in the future
-- Site should be fully responsive and accessible
-- Best practices concerning UI/UX need to be adhered to
-- Before coding anything, establish your workflow and environments (directories, GitHub repo, wireframes, color palette, images)
-- Have completed portfolio proofread by at least one peer
-- Dare to be different and make it your own!
+* **Navigation Bar** with quick access to each section.
+* **home page** shows a background and two sepearte paragraphs interning with **animation move**.
+* **My work** section will show you samples of our group work like :
+ - animtaion.
+ - Grid-layout.
+ - Toggle and Flipping Cards.
+ these cards have a **click here** button which will take you to another tab to see a demo about the work.
+ and you can notice the hover effect applied on the samples parts when hovering.
+ * our **future goals** is the next section.
+ in this section you can see six cards with an image on them and when you hover on anyone it will flipp and show you a brief details about the subject
+ if you want to know more you can click on the **learn more** button o the back-face of the card.
+ * **About** section is where you find about me information.
+ you can read some of
+  - my personal detals.
+  - where did I work before.
+  - which experience do I have.
+  - where did I graduated from.
+  - which languages do I speak.
+  
+  these you will find on Buttons when you click one of them it will show you the detailed infos.
+  
+  * at th end youcan see th **footer** part which contains links to 
+  - github.
+  - notion page which  is a good resource for information.
+  - linkedin.
+  
+  
+  This was The Index.html file and what you can see on you browser.
+  
+##What Can You see on the Sass file?
+* General styles.
+* sticky arrow /take me up arrow styles.
+* general styles for the section.
+* header style:
+which contains
+ - styles for background and fonts.
+ - list style.
+ - item style.
+ - link style.
+ - Before and after pseudu selector.
+ * home section styles:
+ - styles for background and fonts.
+ - the animation keyframes to add animation to the home paragrahs.
+ - styling for paragraphs through to divs .
+ 
+ * work:
+ - styles for background and fonts.
+ - pseudo to style two lines show up and down the paragraph when you hover on it.
+ - styles for the container which contain the samples of our group work.
+ - the work examples with hover effect on them.
+  * goals:
+  - general styles for the whole section and  for background and fonts.
+  - styles for the Div contains the cards.
+  - styles for the div contains the card face.
+  - styles for the div contains the card back.
+  - the styling part of learn more button on the card back.
+  * about:
+  - div contains all the slides.
+  - div for the bar side//.slider// which contain the buttons for the info you want to read.
+  - div contains the details//.slides// connected to each button.
+  
+  * footer:
+  - general styles for background and fonts.
+  - line right styled with border-right.
+  - line left styled with bordre-left.
+  - styled list of icons.
+  
+  * @media to make the page responsive at different breakpoints.
 
-### What to include:
 
-- Profile picture (optional)
-- Contact information
-- Working links to **relevant** social media presence (GitHub, Linkedin)
-- Links to at least three completed projects
-- Brief introduction and personal mission statement
 
-### What NOT to include:
 
-- Links to personal social media accounts
-- Political / religous content
-- Remember this is a public facing portfolio, so avoid using silly photos, gamer tags, gifs etc.
-- Any personal information or opinions unrelated to yourself as a professional and hireable web developer
 
-### Presentation
 
-You will be expected to present your portfolio to the class on the last day of the module. Concentrate on explaining your content and design choices, workflow, and discussing any particular difficulties or triumphs.
 
-In the event that you are unable to complete the project, you will still be expected to present your portfolio as a work in progress (WIP).
 
-Your classmates and teachers will be encouraged to ask questions about your project and offer constructive criticism and feedback.
 
-Think of this as an opportunity to present your work as you would in a professional development position or during the hiring process for such a position. Communication skills are important!
 
-Remember, this is not a competition! This is all about mutual support, sharing and positive encouragement.
 
-#### Helpful Links
 
-- [Developer Portfolios to Inspire](https://www.freecodecamp.org/news/15-web-developer-portfolios-to-inspire-you-137fb1743cae/)
-- [35 Web Developer Portfolio Examples](https://skillcrush.com/blog/web-developer-portfolios/)
-- [More Portfolio Examples](https://www.sliderrevolution.com/design/web-developer-portfolio-examples/)
-- [How to Build a Stunning Portfolio](https://www.sitepoint.com/how-to-build-a-stunning-portfolio-website-as-a-web-developer/)
-- [How to Build a Web Developer Portfolio](https://brainstation.io/career-guides/how-to-build-a-web-developer-portfolio)
-- [A Comprehensive Website Planning Guide](https://www.smashingmagazine.com/2018/02/comprehensive-website-planning-guide-part1/)
-- [Portfolio Tips](https://designmodo.com/dev-portfolio-tips/)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

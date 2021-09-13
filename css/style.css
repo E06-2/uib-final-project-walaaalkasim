@@ -70,51 +70,6 @@ header nav ul {
           justify-content: center;
 }
 
-header nav ul :nth-child(1) {
-  -webkit-animation-name: moving;
-          animation-name: moving;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-transition: ease-in 1s;
-  transition: ease-in 1s;
-}
-
-header nav ul :nth-child(2) {
-  -webkit-animation-name: moving;
-          animation-name: moving;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-transition: ease-in 1s;
-  transition: ease-in 1s;
-}
-
-header nav ul :nth-child(3) {
-  -webkit-animation-name: moving;
-          animation-name: moving;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-transition: ease-in 1s;
-  transition: ease-in 1s;
-}
-
-header nav ul :nth-child(4) {
-  -webkit-animation-name: moving;
-          animation-name: moving;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-transition: ease-in 1s;
-  transition: ease-in 1s;
-}
-
-header nav ul :nth-child(5) {
-  -webkit-animation-name: moving;
-          animation-name: moving;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-transition: ease-in 1s;
-  transition: ease-in 1s;
-}
-
 header nav ul li {
   font-size: 3rem;
   position: relative;
@@ -194,9 +149,9 @@ header nav ul li a:hover::before, header nav ul li a:hover::after {
 }
 
 .home .home-part-one p {
-  text-align: left;
+  text-align: right;
   font-size: 2rem;
-  padding-left: 12vw;
+  padding-right: 12vw;
   padding-top: 7vw;
 }
 
@@ -207,9 +162,9 @@ header nav ul li a:hover::before, header nav ul li a:hover::after {
 }
 
 .home .home-part-two p {
-  text-align: left;
+  text-align: right;
   font-size: 2rem;
-  padding-left: 12vw;
+  padding-right: 12vw;
   padding-top: 25vh;
 }
 
@@ -338,7 +293,7 @@ header nav ul li a:hover::before, header nav ul li a:hover::after {
 .goals {
   width: 100%;
   height: 100vh;
-  background-image: url(../imgs/chuttersnap-du7cDzSEy5w-unsplash.jpg);
+  background-image: url(../imgs/joshua-bartell-6vvIBTvL90A-unsplash.jpg);
   background-size: cover;
 }
 
@@ -448,8 +403,118 @@ header nav ul li a:hover::before, header nav ul li a:hover::after {
 }
 
 .about {
+  background-image: url(../imgs/marion-botella-rII0mAgBHpY-unsplash.jpg);
+  background-size: cover;
   height: 100vh;
-  background-color: #161616;
+  overflow: hidden;
+}
+
+.about .about-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Ropa Sans", sans-serif;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.about .about-content .slider {
+  width: 80%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.about .about-content .slider > a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 10rem;
+  height: 4rem;
+  background: rgba(44, 43, 43, 0.7);
+  text-decoration: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px 5px;
+  color: snow;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  position: relative;
+}
+
+.about .about-content .slider > a:active {
+  top: 1px;
+}
+
+.about .about-content .slider > a:hover {
+  background-color: rgba(19, 91, 139, 0.8);
+}
+
+.about .about-content .slides {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+}
+
+.about .about-content .slides::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.about .about-content .slides::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0);
+}
+
+.about .about-content .slides::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.about .about-content .slides > div {
+  letter-spacing: 1px;
+  line-height: 1.6;
+  scroll-snap-align: start;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 100%;
+  height: 70vh;
+  margin-right: 50px;
+  border-radius: 10px;
+  background: rgba(44, 43, 43, 0.6);
+  color: snow;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  position: relative;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5em;
+  font-weight: 600;
 }
 
 footer {
@@ -521,5 +586,465 @@ footer ul li:hover {
 footer ul li a {
   text-decoration: none;
   color: black;
+}
+
+@media (max-width: 480px) {
+  * h2,
+  * p {
+    font-size: 1rem;
+  }
+  .sticky-arrow {
+    right: 50%;
+  }
+  .sticky-arrow:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  header {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    height: 10vh;
+    width: 80%;
+    z-index: 9999;
+  }
+  header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  header nav ul li {
+    font-size: 1.5rem;
+    list-style: none;
+    padding: 5px;
+  }
+  header nav ul li a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #eeeeee;
+  }
+  .home {
+    height: 100%;
+    background-image: url(../imgs/annie-spratt-h-LcVG8W1XY-unsplash.jpg);
+  }
+  @-webkit-keyframes myfirst {
+    0% {
+    }
+    100% {
+    }
+  }
+  @keyframes myfirst {
+    0% {
+    }
+    100% {
+    }
+  }
+  .home .home-part-one p {
+    font-size: 1.5rem;
+    padding-right: 0;
+    padding-top: 10px;
+  }
+  .home .home-part-two p {
+    font-size: 1.5rem;
+    padding-right: 0;
+    padding-top: 10px;
+  }
+  .work {
+    background-image: url(../imgs/annie-spratt-0ZPSX_mQ3xI-unsplash.jpg);
+  }
+  .work .title-effect {
+    font-weight: 600;
+  }
+  .work .work-part-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .work .work-part-1 .sample {
+    overflow: scroll;
+  }
+  .work .work-part-1 .sample .btn {
+    height: 8vh;
+    width: 12vw;
+    padding-top: 0.5vh;
+  }
+  .goals {
+    height: 100%;
+    background-image: url(../imgs/engin-akyurt-BawjznQ3Q8U-unsplash.jpg);
+  }
+  .goals .goals_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .goals .goals_container .card-container .card-face {
+    width: 50%;
+  }
+  .goals .goals_container .card-container .card-face img {
+    width: 50%;
+  }
+  .goals .goals_container .card-container .card-back {
+    width: 50%;
+    overflow: scroll;
+    border-radius: 2px;
+    padding: 0;
+    font-size: 0.5rem;
+  }
+  .goals .goals_container .card-container .card-back .btn {
+    width: 15vw;
+  }
+  .goals .goals_container .card-container .card-back p {
+    font-size: 1rem;
+  }
+  .about {
+    height: 100%;
+  }
+  .about .about-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .about .about-content .slides > div {
+    overflow: scroll;
+    font-size: 1em;
+  }
+  footer {
+    height: 100%;
+  }
+  footer .line-right {
+    border-left: 0 solid black;
+  }
+  footer .line-right {
+    border-right: 0 solid black;
+  }
+  footer p {
+    font-size: 0.7rem;
+    padding-bottom: 5px;
+  }
+  footer ul li {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sticky-arrow {
+    right: 50%;
+  }
+  .sticky-arrow:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  header {
+    width: 100%;
+  }
+  header nav ul li {
+    font-size: 1rem;
+  }
+  header nav ul li a {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .home {
+    background-image: url(../imgs/annie-spratt-zA7I5BtFbvw-unsplash.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+  @-webkit-keyframes myfirst {
+    0% {
+    }
+    100% {
+    }
+  }
+  @keyframes myfirst {
+    0% {
+    }
+    100% {
+    }
+  }
+  .home .home-part-one p {
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .home .home-part-two p {
+    color: black;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+    padding-top: 10vh;
+  }
+  .home .home-part-two img {
+    width: 40px;
+    height: 40px;
+  }
+  .work {
+    width: 100%;
+    height: 100%;
+  }
+  .work .title-effect {
+    position: relative;
+  }
+  .work p {
+    font-weight: 600;
+    text-align: center;
+    padding-top: 3px;
+  }
+  .work .work-part-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 67%;
+  }
+  .work .work-part-1 .sample {
+    overflow: scroll;
+  }
+  .work .work-part-1 .sample .btn {
+    width: 60px;
+  }
+  .goals {
+    width: 100%;
+    height: 100%;
+    background-image: url(../imgs/annie-spratt-0ZPSX_mQ3xI-unsplash.jpg);
+  }
+  .goals .goals_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .goals .goals_container .card-container .card-face {
+    width: 60vw;
+    height: 70vh;
+    border-radius: 2px;
+  }
+  .goals .goals_container .card-container .card-face img {
+    width: 100%;
+    height: 100%;
+  }
+  .goals .goals_container .card-container .card-back {
+    overflow: scroll;
+    width: 60vw;
+    height: 70vh;
+    border-radius: 2px;
+  }
+  .goals .goals_container .card-container .card-back .btn {
+    height: 30px;
+    width: 30%;
+    padding-top: 1.5vh;
+  }
+  .about {
+    height: 100%;
+  }
+  .about .about-content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .about .about-content .slides > div {
+    overflow: scroll;
+    width: 100%;
+    height: 70%;
+    font-weight: 300;
+  }
+  footer {
+    height: 100%;
+  }
+  footer .line-right {
+    border-left: 0 solid black;
+  }
+  footer .line-right {
+    border-right: 0 solid black;
+  }
+  footer p {
+    padding-bottom: 5px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .goals {
+    width: 100%;
+    height: 100%;
+    background-image: url(../imgs/annie-spratt-0ZPSX_mQ3xI-unsplash.jpg);
+  }
+  .goals .goals_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .goals .goals_container .card-container .card-face {
+    width: 40vw;
+    height: 40vh;
+    border-radius: 2px;
+  }
+  .goals .goals_container .card-container .card-face img {
+    width: 100%;
+    height: 100%;
+  }
+  .goals .goals_container .card-container .card-back {
+    overflow: scroll;
+    width: 30vw;
+    height: 30vh;
+    border-radius: 2px;
+  }
+  .goals .goals_container .card-container .card-back .btn {
+    height: 30px;
+    width: 30%;
+    padding-top: 1.5vh;
+  }
+}
+
+@media (max-width: 1200px) {
+  .goals {
+    width: 100%;
+    height: 100%;
+    background-image: url(../imgs/annie-spratt-0ZPSX_mQ3xI-unsplash.jpg);
+  }
+  .goals .goals_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .goals .goals_container .card-container .card-face {
+    width: 40vw;
+    height: 40vh;
+    border-radius: 2px;
+  }
+  .goals .goals_container .card-container .card-face img {
+    width: 100%;
+    height: 100%;
+  }
+  .goals .goals_container .card-container .card-back {
+    overflow: scroll;
+    width: 30vw;
+    height: 30vh;
+    border-radius: 2px;
+  }
+  .goals .goals_container .card-container .card-back .btn {
+    height: 30px;
+    width: 30%;
+    padding-top: 1.5vh;
+  }
+}
+
+@media (max-width: 1500px) {
+  .goals {
+    width: 100%;
+    height: 100%;
+    background-image: url(../imgs/annie-spratt-0ZPSX_mQ3xI-unsplash.jpg);
+  }
+  .goals .goals_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .goals .goals_container .card-container .card-face {
+    width: 30vw;
+    height: 40vh;
+    border-radius: 2px;
+  }
+  .goals .goals_container .card-container .card-face img {
+    width: 100%;
+    height: 100%;
+  }
+  .goals .goals_container .card-container .card-back {
+    overflow: scroll;
+    height: 30vh;
+    border-radius: 2px;
+  }
+  .goals .goals_container .card-container .card-back .btn {
+    height: 30px;
+    width: 30%;
+    padding-top: 1.5vh;
+  }
+}
+
+@media (max-width: 1600px) {
+  .goals {
+    width: 100%;
+    height: 100%;
+    background-image: url(../imgs/annie-spratt-0ZPSX_mQ3xI-unsplash.jpg);
+  }
+  .goals .goals_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .goals .goals_container .card-container .card-face {
+    width: 30vw;
+    height: 40vh;
+    border-radius: 2px;
+  }
+  .goals .goals_container .card-container .card-face img {
+    width: 100%;
+    height: 100%;
+  }
+  .goals .goals_container .card-container .card-back {
+    overflow: scroll;
+    height: 30vh;
+    border-radius: 2px;
+  }
+  .goals .goals_container .card-container .card-back .btn {
+    height: 30px;
+    width: 30%;
+    padding-top: 1.5vh;
+  }
 }
 /*# sourceMappingURL=style.css.map */
