@@ -1,0 +1,346 @@
+.home {
+    //background
+   // background-image: url(../imgs/isabel-galvez-i54owgDjXeY-unsplash.jpg);
+    //background-size: cover;
+    background: linear-gradient(90deg, #fafafa 0%, #029cde 100%);        // #06203b;
+    height: 100vh;
+
+    .home-content-container{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+    }
+
+
+    .home-title{
+      color: rgba(0, 0, 0, 0.993);
+      text-align: center;
+      margin-top: 5vh;
+    }
+    .skill-bar-container{
+      width: 500px;
+      margin: 50px auto 0;
+      padding: 20px;
+  
+      li{
+        position: relative;
+        list-style: none;
+        margin: 50px 0;
+        font-weight: 500;
+        text-transform: uppercase;
+       
+       
+       
+        &::before{
+  
+          content: "";
+          position: absolute;
+          top: calc(100% + 10px);
+          left: 0;
+          width: 100%;
+          height: 15px;
+          background-color: rgba(3, 66, 148, 0.5);
+          border-radius: 1000px;
+  
+  
+        }
+        &::after{
+  
+          content: "";
+          position: absolute;
+          top: calc(100% + 10px);
+          left: 0;
+          width: 0;
+          height: 15px;
+          background-color:rgb(196, 194, 82);
+          border-radius: 1000px;
+          animation-duration: 4s;
+          animation-timing-function: ease;
+          animation-fill-mode: forwards;
+  
+  
+        }
+      
+         &.skill-bar-html{
+          &::after{
+            animation-name:html;
+          }
+        
+        }
+  
+        &.skill-bar-css{
+          &::after{
+            animation-name:css;
+          
+          }
+        
+        }
+  
+        &.skill-bar-js{
+          &::after{
+            animation-name:js;
+          
+          }
+        
+        }
+  
+        &.skill-bar-react{
+          &::after{
+            animation-name:react;
+          
+          }
+        
+        }
+  
+  
+  
+  
+  
+      } 
+     
+       
+    } 
+    .backend-skill-bar-container{
+      width: 500px;
+      margin: 50px auto 0;
+      margin-top: 12vh;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 2vw;
+  
+      li{
+        position: relative;
+        list-style: none;
+        margin: 50px 0;
+        font-weight: 500;
+        text-transform: uppercase;
+        
+       
+       
+        &::before{
+  
+          content: "";
+          position: absolute;
+          top: calc(100% + 10px);
+          left: 0;
+          width: 100%;
+          height: 15px;
+          background-color: rgba(3, 66, 148, 0.5);
+          border-radius: 1000px;
+  
+  
+        }
+        &::after{
+  
+          content: "";
+          position: absolute;
+          top: calc(100% + 10px);
+          left: 0;
+          width: 0;
+          height: 15px;
+          background-color: rgb(196, 194, 82);
+          border-radius: 1000px;
+          animation-duration: 4s;
+          animation-timing-function: ease;
+          animation-fill-mode: forwards;
+  
+  
+        }
+      
+         &.skill-bar-node{
+          &::after{
+            animation-name:node;
+          }
+        
+        }
+  
+        &.skill-bar-mongo{
+          &::after{
+            animation-name:mongo;
+          
+          }
+        
+        }
+  
+     
+  
+  
+  
+  
+      } 
+     
+       
+    } 
+
+
+    .circular-bar{
+      width:160px;
+       height:160px;
+      position: relative;
+      .outer-line{
+        height: 160px;
+        width: 160px;
+        border-radius: 50%;
+        padding: 20px;
+      
+        box-shadow: 1px 2px 4px 2px rgb(109, 136, 209);
+        // box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+        //            -6px -6px 10px -1px rgba(255,255,255,0.7)  ;
+                   
+                   
+                   
+    .inner-line{
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        box-shadow: 1px 1px 1px 2px rgb(109, 136, 209);
+        // box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+        //             inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+        //             -0.5px -0.5px 0px rgba(255,255,255,1),
+        //             0.5px 0.5px 0px rgba(0,0,0,0.15),
+        //             0px 12px 10px -10px rgba(0,0,0,0.05) ;
+
+      #percent-node,#percent-mongo{
+        font-weight: 600;
+        color: #555;
+      }
+      }
+
+      }
+      svg{
+
+      position: absolute;
+      top: 0;
+      left: 0;
+    #mongo{
+          width:160px;
+          height:160px;
+          fill:none;
+         // stroke:url(#GradientColor);
+          stroke:rgb(196, 194, 82); ;
+          
+          stroke-width:20px;
+          stroke-dasharray: 472;
+          stroke-dashoffset: 472;
+        //  animation: node 2s linear forwards;
+          animation: mongo 2s linear forwards;
+                }
+      #node{
+      width:160px;
+      height:160px;
+      fill:none;
+      stroke:rgb(196, 194, 82);
+      stroke-width:20px;
+      stroke-dasharray: 472;
+      stroke-dashoffset: 472;
+     //  animation: node 2s linear forwards;
+      animation: node 2s linear forwards;
+                        }
+                        #teamWork{
+                          width:160px;
+                          height:160px;
+                          fill:none;
+                          stroke:rgb(196, 194, 82);
+                          stroke-width:20px;
+                          stroke-dasharray: 472;
+                          stroke-dashoffset: 472;
+                         //  animation: node 2s linear forwards;
+                          animation: teamWork 2s linear forwards;
+                                            }
+      }
+
+
+    }
+      .circular-bar-node{
+        margin-left: 3vw;
+        margin-top: 2vh;
+        font-weight: 700;
+     //   border: 1px solid;
+      }
+   
+
+@keyframes mongo{
+100%{
+  stroke-dashoffset: 165;//472-472*0.65(65%)
+}
+}
+@keyframes node{
+  100%{
+    stroke-dashoffset: 141 ; //472-472*0.65(65%)
+  }
+  }
+  @keyframes teamWork{
+    100%{
+      stroke-dashoffset: 100 ; //472-472*0.65(65%)
+    }
+    }
+    @keyframes html{
+      to{
+        width: 87%;
+      }
+    }
+    @keyframes css{
+      to{
+        width: 80%;
+      }
+    }
+    @keyframes js{
+      to{
+        width: 85%;
+      }
+  }  
+  @keyframes react{
+    to{
+      width: 87%;
+    }
+  }
+ 
+    //*****animation *****////
+    @keyframes myfirst {
+      0% {
+        left: -100vw;
+        top: 0px;
+      }
+      100% {
+        left: 0vw;
+        top: 0px;
+      }
+    }
+   
+    //first content on home*****//////
+    .home-part-one {
+      position: relative;
+      animation: myfirst 3s linear 1;
+      p {
+        text-align: right;
+        font-size: 2rem;
+  
+        padding-right: 12vw;
+        padding-top: 7vw;
+      }
+    }
+  
+    //*****second conent on home******///
+  
+    .home-part-two {
+      position: relative;
+      animation: myfirst 3s linear 1;
+      p {
+        text-align: right;
+        font-size: 2rem;
+        padding-right: 12vw;
+        padding-top: 25vh;
+      }
+  
+      ////imag for icone on home screen**/////
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+  

@@ -1,0 +1,57 @@
+.about {
+  background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#0c3f96));
+  background: linear-gradient(90deg, #ffffff 0%, #0c3f96 100%);
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.about .bar-container {
+  display: inline-block;
+  margin-left: 19vw;
+  height: 5vh;
+  width: 70vw;
+  font-size: 1.2rem;
+  margin-top: 20vh;
+  margin-bottom: 5px;
+}
+
+.about .bar-button {
+  width: 12vw;
+  height: 5vh;
+  color: #ffffff;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(0, 50, 158, 0.4);
+  border-radius: 20%;
+}
+
+.about .bar-button:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.about .about-content {
+  height: auto;
+  width: 70vw;
+  font-family: "Ropa Sans", sans-serif;
+  padding: 20px;
+  text-align: center;
+  border-radius: 20%;
+  margin-left: 15vw;
+  font-weight: 600;
+}
+
+.about .about-content .tab-paragraph {
+  margin-top: 3vh;
+  color: #3a0f0f;
+  width: 50%;
+  text-align: center;
+  margin-left: 14vw;
+}
+
+.about .about-content .tab-paragraph li {
+  font-size: 1.5rem;
+  list-style: none;
+}
+/*# sourceMappingURL=about.css.map */
