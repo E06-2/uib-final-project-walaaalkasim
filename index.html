@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="./css/goals.css" />
     <link rel="stylesheet" href="./css/work.css" />
     <link rel="stylesheet" href="./css/footer.css" />
+   <link rel="stylesheet" href="./css/form.css">
 
     <title>Walaa Portfolio</title>
   </head>
@@ -38,17 +39,14 @@
         </div>
       </a>
     </div>
-
-    <!--sticky arrow Ends -->
-
-    <!-- header  for the  navbar -->
+    static
     <header>
       <nav class="nav">
         <ul>
           <li><a href="#home-page">Home</a></li>
           <li><a href="#my-work">Projects</a></li>
           <li><a href="#future-goals">React-Projects</a></li>
-          <li><a href="#about-me">About</a></li>
+          <li><a href="#about-me">About Me</a></li>
           <li><a href="#links">Links</a></li>
         </ul>
       </nav>
@@ -445,21 +443,51 @@
           ></a>
         </li>
         <!-- footer second item -->
-        <li class="footer-item">
+        <!-- <li class="footer-item">
           <a
             href="https://www.notion.so/Web-Development-Resources-dd6faa112a3345b4b376562696dcd35c"
             target="_blank"
             class="footer-link"
             ><img src="https://img.icons8.com/ios/50/000000/notion.png"
           /></a>
-        </li>
+        </li> -->
         <!-- footer third item -->
         <li class="footer-item">
-          <a href="https://www.linkedin.com/feed/"
-            ><i class="fab fa-linkedin-in"></i
+          <a href="https://www.linkedin.com/in/walaa-alkasim-7193a0212?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BfJ0UOLpST%2Fu9KD249B8eYQ%3D%3D"
+          target="_blank"  ><i class="fab fa-linkedin-in"></i
           ></a>
         </li>
-      </ul>
+        <li class="footer-item">
+          <!-- <a href="/uib-final-project-walaaalkasim/email/email.html"
+           target="_blank" > -->
+           
+            <i class="fas fa-envelope" onclick=openForm()></i>
+           
+          <!-- </a> -->
+
+
+</li>    <div>
+            <div class="form-popup" id="myForm">
+              <div class="blocker" onclick="closeForm()"></div>
+              <form  class="form-container"> 
+                <h4>Login</h4>
+
+                
+                <label for="email"></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+            
+                <label for="msg" >your message</label></br></br>
+               
+            <textarea name="msg"  cols="40" rows="10">
+            
+            </textarea>
+                <button type="submit" class="btn" onclick="openNew()">submit</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">cancel</button>
+              </form>
+            </div></div>
+
+        
+      </ul> 
       <p>This page was written by <a href="#about-me"> Walaa Alkasim </a></p>
       <div class="line-left"></div>
     </footer>

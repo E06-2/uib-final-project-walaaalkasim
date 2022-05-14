@@ -1,3 +1,5 @@
+//javascript tab personal information section
+
 function openTab(infoTab) {
   var i;
   var x = document.getElementsByClassName("info-tab");
@@ -6,6 +8,8 @@ function openTab(infoTab) {
   }
   document.getElementById(infoTab).style.display = "block";
 }
+
+//// skill bar section
 
 let percentNode = document.getElementById("percent-node");
 let countNode = 0;
@@ -39,3 +43,18 @@ setInterval(() => {
     percentTeam.innerHTML = countTeam + "%";
   }
 }, 23);
+
+////popup form email ---contact section
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+/////login button
+
+function openNew() {
+  alert("login succeeded");
+}
