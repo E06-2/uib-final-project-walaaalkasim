@@ -53,8 +53,33 @@ function openForm() {
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
-/////login button
+/////submit button
 
-function openNew() {
-  alert("login succeeded");
+document.getElementById("submit").addEventListener("click", submit);
+
+function submit(e) {
+  e.preventDefault();
+
+  const emailAddress = document.getElementById("emailAddress");
+  const emailText = document.getElementById("emailText");
+
+  console.log(emailAddress.value);
+  const email = emailAddress.value;
+  const msg = emailText.value;
+
+  alert("email sent");
+  const url = "http://localhost:8081/contact";
+  const options = {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ email, msg }),
+  };
+
+  fetch(url, options)
+    .then((response) => response.text())
+    .then((result) => {
+      alert(result);
+    });
 }
