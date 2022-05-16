@@ -1,0 +1,49 @@
+
+
+.grid{
+    position: absolute;
+    width: 560px;
+    height: 300px;
+    border: 3px solid rgb(57, 47, 255);
+    margin: 100px;
+    margin-left: 26vw;
+    background-color: rgba(21, 36, 179, 0.2);
+}
+.block{
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    background-color: rgb(81, 81, 157);
+
+}
+.user{
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    background-color: rgb(39, 63, 141);
+
+}
+
+.ball{
+    position:absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: rgb(228, 239, 18);
+}
+.score-btn,.start-pause-btn,#score{
+   
+    margin-left: 38vw;
+     }
+
+#score{ 
+    align-items: center; 
+    padding: 5px;
+    }
+button{
+    background-color: rgb(104, 143, 194);
+    color: aliceblue;
+    width: 5vw;
+
+    height: 3vh;
+}
