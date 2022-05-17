@@ -67,8 +67,8 @@ function submit(e) {
   const email = emailAddress.value;
   const msg = emailText.value;
 
-  alert("email sent");
-  const url = "http://localhost:8081/contact";
+  //alert("email sent");
+  const url = "https://contact-me-email.herokuapp.com/contact";
   const options = {
     method: "POST",
     headers: {
