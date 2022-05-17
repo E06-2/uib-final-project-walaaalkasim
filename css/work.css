@@ -1,0 +1,118 @@
+.work {
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#2c9801));
+  background: linear-gradient(90deg, #ffffff 0%, #2c9801 100%);
+  background-size: cover;
+}
+
+.work h2 {
+  text-align: center;
+  text-transform: uppercase;
+  height: 82px;
+}
+
+.work .title-effect {
+  position: relative;
+}
+
+.work p {
+  color: #2e2e2e;
+  font-size: 1.5rem;
+  text-align: left;
+  padding-top: 3vh;
+  padding-bottom: 5vh;
+  padding-left: 15vw;
+}
+
+.work p::before, .work p::after {
+  position: absolute;
+  opacity: 0;
+  width: 0%;
+  height: 2px;
+  content: "";
+  background: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.work p::before {
+  left: 0px;
+  top: 0px;
+}
+
+.work p::after {
+  right: 0px;
+  bottom: 0px;
+}
+
+.work p:hover::before, .work p:hover::after {
+  opacity: 1;
+  width: 100%;
+}
+
+.work p:hover {
+  font-size: 1.7rem;
+}
+
+.work .work-part-1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (30vh)[3];
+      grid-template-columns: repeat(3, 30vh);
+  height: 60vh;
+  gap: 5vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.work .work-part-1 .sample {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2vh;
+  padding: 2vh;
+  background-color: #55a366;
+  border-radius: 5px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.work .work-part-1 .sample .btn {
+  text-decoration: none;
+  background-color: #235235;
+  color: white;
+  border-radius: 5px;
+  display: block;
+  height: 5vh;
+  width: 7vw;
+  text-align: center;
+  padding-top: 1.5vh;
+}
+
+.work .work-part-1 .sample .btn a {
+  color: whitesmoke;
+}
+
+.work .work-part-1 .sample .btn:hover {
+  background-color: #d1d6d1;
+  color: black;
+}
+
+.work .work-part-1 .sample:hover {
+  color: white;
+  background-color: black;
+  -webkit-box-shadow: 10px 10px 10px black;
+          box-shadow: 10px 10px 10px black;
+}
+
+.work .work-part-1 .sample .description {
+  text-align: center;
+  font-size: 1.5rem;
+}
+/*# sourceMappingURL=work.css.map */

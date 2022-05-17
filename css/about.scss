@@ -1,0 +1,140 @@
+.about {
+    // background-image: url(../imgs/marion-botella-rII0mAgBHpY-unsplash.jpg);
+    background: linear-gradient(90deg, #ffffff 0%, #0c3f96 100%);
+     background-size: cover;
+   
+     height: 100vh;
+     overflow: hidden;
+     /////***the div contains all the slides***///
+   
+     .bar-container{
+      // width:100%;
+       //overflow:hidden;
+      display:inline-block;
+      margin-left: 19vw;
+      height: 5vh;
+      width: 70vw;
+      font-size: 1.2rem;
+      margin-top: 20vh;
+      margin-bottom: 5px;
+      // width:auto;
+       //position:fixed;
+      
+       //white-space:normal;
+       //background-color:rgba(255, 255, 255, 0);
+     }
+     .bar-button{
+       width: 12vw;
+       height: 5vh;
+       color: #ffffff;
+       font-size: large;
+       font-family:Arial, Helvetica, sans-serif;
+       background-color:rgba(0, 50, 158, 0.4);
+       border-radius: 20%;
+       &:hover{
+         transform: scale(1.5);
+       }
+     }
+     
+     .about-content {
+       // display: flex;
+       // align-items: center;
+       // justify-content: center;
+       //border: 1px solid;
+       height: auto;
+   width: 70vw;
+       font-family: "Ropa Sans", sans-serif;
+       padding: 20px;
+       text-align: center;
+       
+      // height: 100%;
+      // overflow: hidden;
+      // background-color: rgba(145, 146, 78, 0.4);
+   border-radius: 20%;
+   margin-left: 15vw;
+   font-weight: 600;
+   
+       .tab-paragraph{
+         li{
+           font-size: 1.5rem;
+           list-style: none;
+         }
+         margin-top: 3vh;
+         color: #3a0f0f;
+         width: 50%;
+         text-align: center;
+         margin-left:14vw;
+         
+      
+       }
+   
+       ///*****the links bar***/////
+       // .slider {
+       //   width: 80%;
+       //   text-align: center;
+       //   overflow: hidden;
+       //   > a {
+       //     display: inline-flex;
+       //     width: 10rem;
+       //     height: 4rem;
+       //     background: rgba(44, 43, 43, 0.7);
+       //     text-decoration: none;
+       //     align-items: center;
+       //     justify-content: center;
+       //     border-radius: 5px 5px;
+       //     color: snow;
+       //     font-size: 1.2rem;
+       //     font-weight: 600;
+       //     margin: 0 0 0.5rem 0;
+       //     position: relative;
+       //     &:active {
+       //       top: 1px;
+       //     }
+       //     &:hover {
+       //       background-color: rgba(19, 91, 139, 0.8);
+       //     }
+       //   }
+       // }
+   
+       ////****the div contains the infos and details**////
+       // .slides {
+       //   display: flex;
+   
+       //   overflow-x: auto;
+       //   // &::-webkit-scrollbar {
+       //   //   width: 10px;
+       //   //   height: 10px;
+       //   // }
+       //   // &::-webkit-scrollbar-thumb {
+       //   //   background: rgba(0, 0, 0, 0);
+       //   // }
+       //   // &::-webkit-scrollbar-track {
+       //   //   background: transparent;
+       //   // }
+       //   > div {
+       //     letter-spacing: 1px;
+       //     line-height: 1.6;
+       //     scroll-snap-align: start;
+       //     flex-shrink: 0;
+       //     width: 100%;
+       //     height: 70vh;
+       //     margin-right: 50px;
+       //     border-radius: 10px;
+       //     background: rgba(44, 43, 43, 0.6);
+       //     color: snow;
+       //     transform-origin: center center;
+       //     transform: scale(1);
+       //     transition: transform 0.5s;
+       //     position: relative;
+       //     text-align: center;
+   
+       //     display: flex;
+       //     justify-content: center;
+       //     align-items: center;
+       //     font-size: 1.5em;
+       //     font-weight: 600;
+       //   }
+       // }
+     }
+   }
+   

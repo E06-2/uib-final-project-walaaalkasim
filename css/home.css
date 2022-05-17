@@ -1,0 +1,361 @@
+.home {
+  background: -webkit-gradient(linear, left top, right top, from(#fafafa), to(#029cde));
+  background: linear-gradient(90deg, #fafafa 0%, #029cde 100%);
+  height: 100vh;
+}
+
+.home .home-content-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.home .home-title {
+  color: rgba(0, 0, 0, 0.993);
+  text-align: center;
+  margin-top: 5vh;
+}
+
+.home .skill-bar-container {
+  width: 500px;
+  margin: 50px auto 0;
+  padding: 20px;
+}
+
+.home .skill-bar-container li {
+  position: relative;
+  list-style: none;
+  margin: 50px 0;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.home .skill-bar-container li::before {
+  content: "";
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 100%;
+  height: 15px;
+  background-color: rgba(3, 66, 148, 0.5);
+  border-radius: 1000px;
+}
+
+.home .skill-bar-container li::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 0;
+  height: 15px;
+  background-color: #c4c252;
+  border-radius: 1000px;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.home .skill-bar-container li.skill-bar-html::after {
+  -webkit-animation-name: html;
+          animation-name: html;
+}
+
+.home .skill-bar-container li.skill-bar-css::after {
+  -webkit-animation-name: css;
+          animation-name: css;
+}
+
+.home .skill-bar-container li.skill-bar-js::after {
+  -webkit-animation-name: js;
+          animation-name: js;
+}
+
+.home .skill-bar-container li.skill-bar-react::after {
+  -webkit-animation-name: react;
+          animation-name: react;
+}
+
+.home .backend-skill-bar-container {
+  width: 500px;
+  margin: 50px auto 0;
+  margin-top: 12vh;
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 2vw;
+}
+
+.home .backend-skill-bar-container li {
+  position: relative;
+  list-style: none;
+  margin: 50px 0;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.home .backend-skill-bar-container li::before {
+  content: "";
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 100%;
+  height: 15px;
+  background-color: rgba(3, 66, 148, 0.5);
+  border-radius: 1000px;
+}
+
+.home .backend-skill-bar-container li::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 0;
+  height: 15px;
+  background-color: #c4c252;
+  border-radius: 1000px;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.home .backend-skill-bar-container li.skill-bar-node::after {
+  -webkit-animation-name: node;
+          animation-name: node;
+}
+
+.home .backend-skill-bar-container li.skill-bar-mongo::after {
+  -webkit-animation-name: mongo;
+          animation-name: mongo;
+}
+
+.home .circular-bar {
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+
+.home .circular-bar .outer-line {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  padding: 20px;
+  -webkit-box-shadow: 1px 2px 4px 2px #6d88d1;
+          box-shadow: 1px 2px 4px 2px #6d88d1;
+}
+
+.home .circular-bar .outer-line .inner-line {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 1px 1px 1px 2px #6d88d1;
+          box-shadow: 1px 1px 1px 2px #6d88d1;
+}
+
+.home .circular-bar .outer-line .inner-line #percent-node, .home .circular-bar .outer-line .inner-line #percent-mongo {
+  font-weight: 600;
+  color: #555;
+}
+
+.home .circular-bar svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.home .circular-bar svg #mongo {
+  width: 160px;
+  height: 160px;
+  fill: none;
+  stroke: #c4c252;
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  -webkit-animation: mongo 2s linear forwards;
+          animation: mongo 2s linear forwards;
+}
+
+.home .circular-bar svg #node {
+  width: 160px;
+  height: 160px;
+  fill: none;
+  stroke: #c4c252;
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  -webkit-animation: node 2s linear forwards;
+          animation: node 2s linear forwards;
+}
+
+.home .circular-bar svg #teamWork {
+  width: 160px;
+  height: 160px;
+  fill: none;
+  stroke: #c4c252;
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  -webkit-animation: teamWork 2s linear forwards;
+          animation: teamWork 2s linear forwards;
+}
+
+.home .circular-bar-node {
+  margin-left: 3vw;
+  margin-top: 2vh;
+  font-weight: 700;
+}
+
+@-webkit-keyframes mongo {
+  100% {
+    stroke-dashoffset: 165;
+  }
+}
+
+@keyframes mongo {
+  100% {
+    stroke-dashoffset: 165;
+  }
+}
+
+@-webkit-keyframes node {
+  100% {
+    stroke-dashoffset: 141;
+  }
+}
+
+@keyframes node {
+  100% {
+    stroke-dashoffset: 141;
+  }
+}
+
+@-webkit-keyframes teamWork {
+  100% {
+    stroke-dashoffset: 100;
+  }
+}
+
+@keyframes teamWork {
+  100% {
+    stroke-dashoffset: 100;
+  }
+}
+
+@-webkit-keyframes html {
+  to {
+    width: 87%;
+  }
+}
+
+@keyframes html {
+  to {
+    width: 87%;
+  }
+}
+
+@-webkit-keyframes css {
+  to {
+    width: 80%;
+  }
+}
+
+@keyframes css {
+  to {
+    width: 80%;
+  }
+}
+
+@-webkit-keyframes js {
+  to {
+    width: 85%;
+  }
+}
+
+@keyframes js {
+  to {
+    width: 85%;
+  }
+}
+
+@-webkit-keyframes react {
+  to {
+    width: 87%;
+  }
+}
+
+@keyframes react {
+  to {
+    width: 87%;
+  }
+}
+
+@-webkit-keyframes myfirst {
+  0% {
+    left: -100vw;
+    top: 0px;
+  }
+  100% {
+    left: 0vw;
+    top: 0px;
+  }
+}
+
+@keyframes myfirst {
+  0% {
+    left: -100vw;
+    top: 0px;
+  }
+  100% {
+    left: 0vw;
+    top: 0px;
+  }
+}
+
+.home .home-part-one {
+  position: relative;
+  -webkit-animation: myfirst 3s linear 1;
+          animation: myfirst 3s linear 1;
+}
+
+.home .home-part-one p {
+  text-align: right;
+  font-size: 2rem;
+  padding-right: 12vw;
+  padding-top: 7vw;
+}
+
+.home .home-part-two {
+  position: relative;
+  -webkit-animation: myfirst 3s linear 1;
+          animation: myfirst 3s linear 1;
+}
+
+.home .home-part-two p {
+  text-align: right;
+  font-size: 2rem;
+  padding-right: 12vw;
+  padding-top: 25vh;
+}
+
+.home .home-part-two img {
+  width: 40px;
+  height: 40px;
+}
+/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,113 @@
+.goals {
+  width: 100%;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, right top, from(#edecea), to(#dbd405));
+  background: linear-gradient(90deg, #edecea 0%, #dbd405 100%);
+}
+
+.goals b .goals-title {
+  background-color: rgba(82, 82, 82, 0.7);
+}
+
+.goals h2,
+.goals p {
+  text-align: center;
+  color: white;
+}
+
+.goals .goals_container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (40vh)[3];
+      grid-template-columns: repeat(3, 40vh);
+  gap: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.goals .goals_container .test {
+  margin-left: 12vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (25vw)[2];
+      grid-template-columns: repeat(2, 25vw);
+}
+
+.goals .goals_container .card-container {
+  position: relative;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.goals .goals_container .card-container .card-face {
+  position: relative;
+  width: 300px;
+  height: 173.21px;
+  background-color: #fdbb2d;
+  margin: 86.6px 0;
+  border-radius: 15px;
+  border: 1px solid red;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  border: 0.4vh solid transparent;
+}
+
+.goals .goals_container .card-container .card-face:hover {
+  background-color: #161414;
+}
+
+.goals .goals_container .card-container .card-face:hover p {
+  color: #eeeeee;
+}
+
+.goals .goals_container .card-container .card-face::before, .goals .goals_container .card-container .card-face::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 212.13px;
+  height: 212.13px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 43.934px;
+  border-radius: 15px;
+}
+
+.goals .goals_container .card-container .card-face::before {
+  top: -106.066px;
+}
+
+.goals .goals_container .card-container .card-face::after {
+  bottom: -106.066px;
+}
+
+.goals .goals_container .card-container .card-face p {
+  font-size: 3rem;
+  color: #000000;
+}
+
+.goals .goals_container .card-container .card-face .hexa-text {
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  text-align: center;
+}
+
+.goals .goals_container .card-container .card-face .hexa-btn {
+  margin-top: 20%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.goals .goals_container .card-container .card-face .navigate-btn {
+  width: 5vw;
+  height: 5vh;
+  border-radius: 20px;
+  background-color: #87978a;
+  font-weight: 600;
+}
+/*# sourceMappingURL=goals.css.map */

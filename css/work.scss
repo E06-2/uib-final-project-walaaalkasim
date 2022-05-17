@@ -1,0 +1,110 @@
+.work {
+    ///general style***////
+    height: 100vh;
+    //background-image: url(../imgs/mitchell-luo-xREzOtWzDrQ-unsplash.jpg);
+    background: linear-gradient(90deg,   #ffffff 0%,#2c9801 100%);
+    background-size: cover;
+  
+    ////styles for h2 ***//
+    h2 {
+      text-align: center;
+      text-transform: uppercase;
+      height: 82px;
+    }
+    .title-effect {
+      position: relative;
+    }
+  
+    ///***psuedu for paragraph***///
+    p {
+      &::before,
+      &::after {
+        position: absolute;
+        opacity: 0;
+        width: 0%;
+        height: 2px;
+        content: "";
+        background: #fff;
+        transition: all 0.3s;
+      }
+      &::before {
+        left: 0px;
+        top: 0px;
+      }
+      &::after {
+        right: 0px;
+        bottom: 0px;
+      }
+      &:hover::before,
+      &:hover::after {
+        opacity: 1;
+        width: 100%;
+      }
+  
+      ///hover style***///
+      &:hover {
+        font-size: 1.7rem;
+      }
+  
+      ////style the paragraph ***///
+      color: #2e2e2e;
+      font-size: 1.5rem;
+      text-align: left;
+      padding-top: 3vh;
+      padding-bottom: 5vh;
+      padding-left: 15vw;
+    }
+    ///the container of the samples for my work section***////
+    .work-part-1 {
+      display: grid;
+      grid-template-columns: repeat(3, 30vh);
+      height: 60vh;
+      gap: 5vw;
+      justify-content: center;
+      ////***the work examples***///
+      .sample {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+  
+        margin-top: 2vh;
+        padding: 2vh;
+        background-color: #55a366;
+        border-radius: 5px;
+        transition: 300ms;
+        ////***the click here button on my work section*****////
+        .btn {
+          text-decoration: none;
+          background-color: rgb(35, 82, 53);
+          color: white;
+          border-radius: 5px;
+          display: block;
+          height: 5vh;
+          width: 7vw;
+  
+          text-align: center;
+          padding-top: 1.5vh;
+          a {
+            color: whitesmoke;
+          }
+          ////hover on sample part****///
+          &:hover {
+            background-color: rgb(209, 214, 209);
+            color: black;
+          }
+        }
+  
+        ///hover on click here button***//
+        &:hover {
+          color: white;
+          background-color: black;
+          box-shadow: 10px 10px 10px black;
+        }
+  
+        .description {
+          text-align: center;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }

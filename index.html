@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Glory:wght@100&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/goals.css" />
+    <link rel="stylesheet" href="./css/work.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+   <link rel="stylesheet" href="./css/form.css">
+
+    <title>Walaa Portfolio</title>
+  </head>
+  <body>
+    <!--sticky arrow Begins-->
+
+    <div>
+      <a href="#">
+        <div class="sticky-arrow">
+          <i class="fas fa-chevron-up"></i>
+        </div>
+      </a>
+    </div>
+ 
+    <header>
+      <nav class="nav">
+        <ul>
+          <li><a href="#home-page">Home</a></li>
+          <li><a href="#my-work">Projects</a></li>
+          <li><a href="#future-goals">React-Projects</a></li>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#links">Links</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- section 1 the home page  -->
+
+    <section class="home" id="home-page">
+      <p class="home-title">One Year Web Development Course Progress</p>
+      <div class="home-content-container">
+        <div class="skill-bar-container">
+          <ul>
+            <li class="skill-bar-html">html</li>
+            <li class="skill-bar-css">css</li>
+            <li class="skill-bar-js">js</li>
+            <li class="skill-bar-react">react</li>
+          </ul>
+        </div>
+
+        <div class="backend-skill-bar-container">
+          <div>
+            <div class="circular-bar">
+              <div class="outer-line">
+                <div class="inner-line">
+                  <div id="percent-node"></div>
+                </div>
+
+                <svg width="160px" height="160px">
+                  <defs>
+                    <linearGradient id="GradientColor">
+                      <stop offset="0%" stop-color="#e91e63" />
+                      <stop offset="100%" stop-color="#673ab7" />
+                    </linearGradient>
+                  </defs>
+                  <circle
+                    id="node"
+                    cx="80"
+                    cy="80"
+                    r="70"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="circular-bar-node">Nodejs</div>
+          </div>
+          <div>
+            <div class="circular-bar">
+              <div class="outer-line">
+                <div class="inner-line">
+                  <div id="percent-mongo"></div>
+                </div>
+
+                <svg width="160px" height="160px">
+                  <defs>
+                    <linearGradient id="GradientColor">
+                      <stop offset="0%" stop-color="#e91e63" />
+                      <stop offset="100%" stop-color="#673ab7" />
+                    </linearGradient>
+                  </defs>
+                  <circle
+                    id="mongo"
+                    cx="80"
+                    cy="80"
+                    r="70"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="circular-bar-node">MongoDb</div>
+          </div>
+          <div class="team-work-circular-bar">
+            <div class="circular-bar">
+              <div class="outer-line">
+                <div class="inner-line">
+                  <div id="percent-team"></div>
+                </div>
+
+                <svg width="160px" height="160px">
+                  <defs>
+                    <linearGradient id="GradientColor">
+                      <stop offset="0%" stop-color="#e91e63" />
+                      <stop offset="100%" stop-color="#673ab7" />
+                    </linearGradient>
+                  </defs>
+                  <circle
+                    id="teamWork"
+                    cx="80"
+                    cy="80"
+                    r="70"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="circular-bar-node">team work</div>
+          </div>
+          <!-- <ul>
+            <li class="skill-bar-node">node.js</li>
+            <li class="skill-bar-mongo">MongoDb</li>
+          </ul> -->
+        </div>
+
+        
+      </div>
+    </section>
+
+    <!-- this section contains the work -->
+
+    <section class="work" id="my-work">
+   
+
+    
+
+      <!-- sample one Animation  -->
+      <div class="work-part-1">
+        <div class="sample">
+          <h2>Animation Background</h2>
+          <div class="description">
+            we learned how to add animation to our page by specify some
+            keyframes and give them the styles we want our element to have at
+            certain times.
+          </div>
+          <a
+            href="#"
+            class="btn"
+            target="_blank"
+            >click here</a
+          >
+        </div>
+        <!-- sample two tank game -->
+
+        <div class="sample">
+          <h2>BreakOut-Game</h2>
+          <div class="description">
+            Create Simple classic breakout game using only: javascript,css,html.
+          </div>
+          <a href="https://soft-biscochitos-ffcde2.netlify.app/" class="btn" target="_blank"
+            >click here</a
+          >
+        </div>
+
+        <!-- sample three toggle -->
+
+        <div class="sample">
+          <h2>Calculator Using Javascript</h2>
+          <div class="description">
+            Toggle switch allows us to show and hide certain content just by
+            clicking on it and we used flipping card to show some information
+            about the card we have
+          </div>
+          <a
+            href="#"
+            class="btn"
+            target="_blank"
+            >click here</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- end of my work section -->
+
+    <section class="goals" id="future-goals">
+      <div class="goals-title">
+        <!-- <h2>Our Future Goals</h2>
+        <p>
+          By The End Of This Course We Are Going To Learn About The Topics Below
+        </p> -->
+      </div>
+
+      <!-- container for the cards -->
+
+      <div class="goals_container">
+        <!-- first card -->
+
+        <div class="card-container">
+          <div class="card-face">
+            <!-- <img src="./imgs/logos/redux.png" alt="" /> -->
+            <div class="hexa-text">
+              <p>NASA</p>
+              <div class="hexa-btn">
+              <a href="https://github.com/walaaalkasim/SPA-NASA-API" target="_blank">  <button class="navigate-btn">github</button></a>
+           <a href="https://space-pr0ject.netlify.app/" target="_blank">     <button class="navigate-btn">apllication</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- second card -->
+        <div class="card-container">
+          <div class="card-face">
+            <!-- <img
+              src="./imgs/logos/computer-icons-logo-brand-javascript-javaserver-pages-free-892749.png"
+              alt=""
+            /> -->
+
+            <div class="hexa-text">
+              <p>RECIPES</p>
+
+              <div class="hexa-btn">
+               <a href="https://github.com/walaaalkasim/meals_app_ecommerce" target="_blank"> <button class="navigate-btn">github</button></a>
+                <a href="https://monumental-florentine-0734e7.netlify.app/" target="_blank"> <button class="navigate-btn">apllication</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- third card -->
+        <div class="card-container">
+          <div class="card-face">
+            <!-- <img
+              src="./imgs/logos/js-logo-react-react-js-icon-221753.png"
+              alt=""
+            /> -->
+            <div class="hexa-text">
+              <p>NEWS</p>
+              <div class="hexa-btn">
+               <a href="https://github.com/walaaalkasim/news-with-pictures" target="_blank"> <button class="navigate-btn">github</button></a>
+                <button class="navigate-btn">apllication</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- fourth card -->
+        <div class="test">
+          <div class="card-container">
+            <div class="card-face">
+              <!-- <img
+              src="./imgs/logos/kisspng-logo-mysql-database-phpmyadmin-mysql-digital-agency-maidenhead-web-agency-uk-5b6475c37dee49.2368989315333104035158.png"
+              alt=""
+            /> -->
+              <div class="hexa-text">
+                <p>WEATHER</p>
+                <div class="hexa-btn">
+                  <a href="https://github.com/walaaalkasim/weather-project" target="_blank"><button class="navigate-btn">github</button></a>
+                  <a href="https://weather-project-sigma.vercel.app/" target="_blank"><button class="navigate-btn">apllication</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- fifth card -->
+
+          <div class="card-container">
+            <div class="card-face">
+              <!-- <img
+              src="./imgs/logos/kisspng-mongodb-logo-database-nosql-postgresql-how-to-create-an-outstanding-tech-stack-clickup-bl-5c391bdfde6506.5513114315472465599109.png"
+              alt=""
+            /> -->
+              <div class="hexa-text">
+                <p>TO DO APP</p>
+                <div class="hexa-btn">
+                <a href="https://github.com/walaaalkasim/todo-app" target="_blank">  <button class="navigate-btn">github</button></a>
+                 <a href="https://6282c945734815275dafae5a--dapper-concha-cd2a43.netlify.app/" target="_blank"> <button class="navigate-btn">apllication</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- sixth card -->
+      </div>
+    </section>
+
+    <!-- end of section goals -->
+
+    <!-- here you will find information ** about me ** -->
+
+    <section class="about" id="about-me">
+      <div class="bar-container">
+        <button class="bar-button" onclick="openTab('personal_information')">
+          personal information
+        </button>
+        <button class="bar-button" onclick="openTab('education')">
+          education
+        </button>
+        <button class="bar-button" onclick="openTab('work_and_experience')">
+          work and experience
+        </button>
+        <button class="bar-button" onclick="openTab('languages')">
+          languages
+        </button>
+        <button class="bar-button" onclick="openTab('hobbies')">hobbies</button>
+      </div>
+
+      <div class="about-content">
+        <!-- <div class="w3-container"> -->
+        <!-- </section> -->
+
+        <div id="personal_information" class="info-tab">
+          <ul class="tab-paragraph">
+            <li>
+              My name is Walaa Alkasim (31y) I am Syrian and I am a mother of
+              two.
+            </li>
+            <li>
+              What you need to know about me Is that i am a determining and a
+              strong person <br />
+            </li>
+            <li>
+              I have wonderful Personality and I have a beautiful mind<br />
+              which Allows me to learn fast and quickly and to pay attention to
+              Details.<br />
+            </li>
+            <li>
+              As I am a responsible person you can always depend on me. <br />
+              I like to repair and fix things so for me there are No problems
+              but just new challenges to be solved.
+            </li>
+          </ul>
+        </div>
+
+        <div id="education" class="info-tab" style="display: none">
+          <ul class="tab-paragraph">
+            <li>
+              2014-2016: Philadelphia University Jordan. (Mathematics Bachelor's
+              87.6 %)
+            </li>
+            <li>2007-2011: Alba'ath University, Homs Syria (Mathematics).</li>
+            <br />
+          </ul>
+        </div>
+
+        <div id="work_and_experience" class="info-tab" style="display: none">
+          <ul class="tab-paragraph">
+            <li>2021:start the web developing course at DCI.</li></br>
+
+            <li>
+              2016-2018:Mathematics teacher for different levels/ private
+              lessons.
+            </li></br>
+           
+            <li>
+              2011-2013: substitute teacher full time in high school of Qara.
+            </li></br>
+            <li>
+              2008-2009: preparing student for secondary schools final exams.
+            </li></br>
+
+            <br />
+
+            <br />
+          </ul>
+        </div>
+
+        <div id="languages" class="info-tab" style="display: none">
+        
+          <ul class="tab-paragraph">
+        <li> *   Arabic: Native Speaker.</li> <br />
+
+          <li> * English: Upper Intermediate /Ielts(6.5 -2017) .</li> <br />
+
+          <li>*  German:B2 Niveau.</li> <br />
+
+         <li>   I still working on my languages to achieve better levels .</li>
+          </ul>
+        </div>
+        <div id="hobbies" class="info-tab" style="display: none">
+         
+          <ul class="tab-paragraph">
+           <li> In my free time I like to do a lot of things like:</li> <br />
+
+           <li> * Solve  jigsaw puzzles which is my favorite one.</li> <br />
+           <li> * Watch movies .</li> <br />
+
+           <li> * Visit new places .</li> <br />
+
+          <li>  * Take a walk and enjoy the nature.</li> <br />
+
+          <li>  * Crochet .</li>
+          </ul>
+        </div>
+      </div>
+      <!-- </div> -->
+    </section>
+    <!-- end of section about me -->
+
+    <!-- this is the footer begin -->
+
+    <footer class="links" id="links">
+      <div class="line-right"></div>
+      <ul class="footer-list">
+        <!-- footer first item -->
+        <li class="footer-item">
+          <a href="https://github.com/" target="_blank" class="footer-link"
+            ><i class="fab fa-github"></i
+          ></a>
+        </li>
+        <!-- footer second item -->
+        <!-- <li class="footer-item">
+          <a
+            href="https://www.notion.so/Web-Development-Resources-dd6faa112a3345b4b376562696dcd35c"
+            target="_blank"
+            class="footer-link"
+            ><img src="https://img.icons8.com/ios/50/000000/notion.png"
+          /></a>
+        </li> -->
+        <!-- footer third item -->
+        <li class="footer-item">
+          <a href="https://www.linkedin.com/in/walaa-alkasim-7193a0212?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BfJ0UOLpST%2Fu9KD249B8eYQ%3D%3D"
+          target="_blank"  ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </li>
+        <li class="footer-item">
+          <!-- <a href="/uib-final-project-walaaalkasim/email/email.html"
+           target="_blank" > -->
+           
+            <i class="fas fa-envelope" onclick=openForm()></i>
+           
+          <!-- </a> -->
+
+
+</li>   
+            <div class="form-popup" id="myForm">
+              <div class="blocker" onclick="closeForm()"></div>
+              <form  class="form-container"> 
+                <h4>send me a message</h4>
+
+                
+                <label for="email"></label>
+                <input type="text" placeholder="Enter Email" name="email" id="emailAddress" required>
+            
+                <label for="msg" >your message</label></br></br>
+               
+            <textarea name="msg"  cols="40" rows="10" id="emailText">
+            
+            </textarea>
+                <button type="submit" class="btn" id="submit">submit</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">cancel</button>
+              </form>
+            </div>
+
+        
+      </ul> 
+      <p>This page was written by <a href="#about-me"> Walaa Alkasim </a></p>
+      <div class="line-left"></div>
+    </footer>
+    <script src="./index.js">
+      
+    </script>
+    <!-- footer section ends -->
+  </body>
+</html>
