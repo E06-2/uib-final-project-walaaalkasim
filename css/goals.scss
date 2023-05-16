@@ -1,0 +1,118 @@
+.goals {
+    ///general style***///
+    width: 100%;
+    height: 100vh;
+    // background-image: url(../imgs/joshua-bartell-6vvIBTvL90A-unsplash.jpg);
+    // background-size: cover;
+    background: linear-gradient(90deg, #edecea 0%, #dbd405 100%);
+    b .goals-title {
+      background-color: rgba($color: #525252, $alpha: 0.7);
+    }
+  
+    h2,
+    p {
+      text-align: center;
+      color: white;
+    }
+  
+    //the div containes the cards**//
+    .goals_container {
+      display: grid;
+      grid-template-columns: repeat(3, 40vh);
+      //grid-template-rows: repeat(2, 20vw);
+      gap: 5px;
+  
+      justify-content: center;
+      .test {
+        margin-left: 12vw;
+        display: grid;
+        grid-template-columns: repeat(2, 25vw);
+      }
+      /////the div containes the card faces**/////
+      .card-container {
+        position: relative;
+        perspective: 1000px;
+  
+        ///*******card face****/////
+        .card-face {
+          position: relative;
+          width: 300px;
+          height: 173.21px;
+          background-color: #fdbb2d;
+          margin: 86.6px 0;
+          border-radius: 15px;
+          border: 1px solid red;
+          box-sizing: border-box;
+          transition: all 1s;
+          border: 0.4vh solid transparent;
+  
+          // border: 0.4vh solid transparent;
+          // box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  
+          // background-color: rgba($color: #000000, $alpha: 0.5);
+          // height: 30vh;
+          // width: 15vw;
+          // margin: 2rem;
+          // border: 0.1rem solid rgb(255, 255, 255);
+          // border-radius: 20px 70px 200px;
+          // box-shadow: 2px 2px 2px rgb(8, 8, 8);
+          // padding: 1rem;
+  
+          // backface-visibility: hidden;
+          // transition: transform 0.5s;
+          &:hover {
+            background-color: rgb(22, 20, 20);
+            p {
+              color: #eeeeee;
+            }
+          }
+  
+          &::before,
+          &::after {
+            content: "";
+            position: absolute;
+            z-index: 1;
+            width: 212.13px;
+            height: 212.13px;
+            -webkit-transform: scaleY(0.5774) rotate(-45deg);
+            -ms-transform: scaleY(0.5774) rotate(-45deg);
+            transform: scaleY(0.5774) rotate(-45deg);
+            background-color: inherit;
+            left: 43.934px;
+            border-radius: 15px;
+            // box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+          }
+  
+          &::before {
+            top: -106.066px;
+          }
+          &::after {
+            bottom: -106.066px;
+          }
+          p {
+            font-size: 3rem;
+            color: #000000;
+          }
+          .hexa-text {
+            position: absolute;
+            z-index: 1000;
+            width: 100%;
+            text-align: center;
+          }
+          .hexa-btn {
+            margin-top: 20%;
+            align-items: center;
+          }
+          .navigate-btn {
+            width: 5vw;
+            height: 5vh;
+            border-radius: 20px;
+            background-color: #87978a;
+            font-weight: 600;
+          }
+        }
+  
+        /////*****card back *****///////
+      }
+    }
+  }
